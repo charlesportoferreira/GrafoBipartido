@@ -27,6 +27,7 @@ public class Vertice {
     }
 
     public Vertice(int id) {
+        this.id = id;
         this.cor = -1;
         arestas = new ArrayList<>();
     }
