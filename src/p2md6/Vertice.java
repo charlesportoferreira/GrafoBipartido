@@ -20,6 +20,17 @@ public class Vertice {
     private int cor;
     private final List<Aresta> arestas;
     private int id;
+    private int nrComponente;
+
+    public int getNrComponente() {
+        return nrComponente;
+    }
+
+    public void setNrComponente(int nrComponente) {
+        this.nrComponente = nrComponente;
+    }
+    
+    
 
     public Vertice(int id, int cor) {
         this.cor = cor;
