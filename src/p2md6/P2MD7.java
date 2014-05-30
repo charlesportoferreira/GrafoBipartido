@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author charleshenriqueportoferreira
  */
-public class P2MD6 {
+public class P2MD7 {
 
     //public static List<Vertice> verticesVermelhos = new ArrayList<>();
     //public static List<Vertice> verticesAzuis = new ArrayList<>();
@@ -78,14 +78,14 @@ public class P2MD6 {
 //        Aresta a15 = new Aresta(v11, v12);
         if (isBipartido(todosVertices)) {
             for (Vertice vertice : vertices) {
-                if (vertice.getNrComponente() == 1 && vertice.getCor() == 0) {
+                if (vertice.getNrComponente() == 1 && vertice.getCor() == Vertice.BLACK) {
                     System.out.print(vertice.getId() + " ");
                 }
             }
 
             System.out.println();
             for (Vertice vertice : vertices) {
-                if (vertice.getNrComponente() == 1 && vertice.getCor() == 1) {
+                if (vertice.getNrComponente() == 1 && vertice.getCor() == Vertice.RED) {
                     System.out.print(vertice.getId() + " ");
                 }
             }

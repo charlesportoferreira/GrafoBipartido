@@ -21,6 +21,8 @@ public class Vertice {
     private final List<Aresta> arestas;
     private int id;
     private int nrComponente;
+    private String pai;
+    private int profundidade;
 
     public int getNrComponente() {
         return nrComponente;
